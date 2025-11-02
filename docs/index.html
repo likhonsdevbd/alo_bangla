@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alo Bangla - Bengali Vocabulary AI Model</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            color: white;
+            padding: 60px 20px;
+            animation: fadeIn 1s;
+        }
+        
+        h1 {
+            font-size: 3.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .subtitle {
+            font-size: 1.3em;
+            opacity: 0.9;
+        }
+        
+        .main-content {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin-top: 30px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            animation: slideUp 1s;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+        }
+        
+        h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 2em;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+        
+        .demo-box {
+            background: #f8f9ff;
+            border-left: 4px solid #667eea;
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        
+        .demo-box:hover {
+            transform: translateX(10px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.2);
+        }
+        
+        .word-example {
+            background: white;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 10px;
+            border: 2px solid #e0e0e0;
+            transition: all 0.3s;
+        }
+        
+        .word-example:hover {
+            border-color: #667eea;
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.2);
+        }
+        
+        .bengali {
+            font-size: 2em;
+            color: #764ba2;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .pronunciation {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 5px;
+        }
+        
+        .meaning {
+            color: #333;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        
+        .example-text {
+            color: #555;
+            background: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            margin: 10px;
+            transition: all 0.3s;
+            font-weight: bold;
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.6);
+        }
+        
+        .button-secondary {
+            background: white;
+            color: #667eea;
+            border: 2px solid #667eea;
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .stat-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+        }
+        
+        .stat-number {
+            font-size: 3em;
+            font-weight: bold;
+        }
+        
+        .stat-label {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        
+        code {
+            background: #2d2d2d;
+            color: #f8f8f2;
+            padding: 20px;
+            border-radius: 10px;
+            display: block;
+            overflow-x: auto;
+            margin: 15px 0;
+            font-family: 'Courier New', monospace;
+        }
+        
+        .xml-output {
+            background: #f0f7ff;
+            border: 2px solid #667eea;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 15px 0;
+            font-family: monospace;
+            white-space: pre-wrap;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes slideUp {
+            from { 
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to { 
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .feature-card {
+            background: #f8f9ff;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            transition: all 0.3s;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+        }
+        
+        .feature-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+        
+        footer {
+            text-align: center;
+            color: white;
+            padding: 40px 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌟 Alo Bangla</h1>
+            <p class="subtitle">AI-Powered Bengali Vocabulary Learning Model</p>
+            <p style="margin-top: 20px; font-size: 1.1em;">
+                Fine-tuned GPT-2 model for structured Bengali language learning with SheikhCanvas XML format
+            </p>
+        </header>
+
+        <div class="main-content">
+            <div class="section">
+                <h2>📊 Model Statistics</h2>
+                <div class="stats">
+                    <div class="stat-card">
+                        <div class="stat-number">124M</div>
+                        <div class="stat-label">Parameters</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">77</div>
+                        <div class="stat-label">Vocabulary Examples</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">475MB</div>
+                        <div class="stat-label">Model Size</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">GPT-2</div>
+                        <div class="stat-label">Base Model</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>✨ Key Features</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🎯</div>
+                        <h3>Structured Output</h3>
+                        <p>XML-tagged format for consistent learning content</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🇧🇩</div>
+                        <h3>Bengali Focus</h3>
+                        <p>Specialized for Bengali vocabulary and grammar</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">💡</div>
+                        <h3>Contextual Examples</h3>
+                        <p>Real-world usage examples for each word</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔤</div>
+                        <h3>Pronunciation Guide</h3>
+                        <p>Phonetic transcriptions included</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>🎨 Example Outputs</h2>
+                
+                <div class="word-example">
+                    <div class="bengali">আলো (Alo)</div>
+                    <div class="pronunciation">Pronunciation: Ah-lo</div>
+                    <div class="meaning"><strong>Meaning:</strong> Light</div>
+                    <div class="example-text">
+                        <strong>Example:</strong> ঘরে আলো জ্বালাও।<br>
+                        <em>Translation: Turn on the light in the room.</em>
+                    </div>
+                </div>
+
+                <div class="word-example">
+                    <div class="bengali">বই (Boi)</div>
+                    <div class="pronunciation">Pronunciation: Bo-ee</div>
+                    <div class="meaning"><strong>Meaning:</strong> Book</div>
+                    <div class="example-text">
+                        <strong>Example:</strong> আমি একটি বই পড়ছি।<br>
+                        <em>Translation: I am reading a book.</em>
+                    </div>
+                </div>
+
+                <div class="word-example">
+                    <div class="bengali">ভালো (Bhalo)</div>
+                    <div class="pronunciation">Pronunciation: Bha-lo</div>
+                    <div class="meaning"><strong>Meaning:</strong> Good</div>
+                    <div class="example-text">
+                        <strong>Example:</strong> এটি একটি ভালো দিন।<br>
+                        <em>Translation: This is a good day.</em>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>🔧 XML Output Format</h2>
+                <p>The model generates structured XML output using the SheikhCanvas format:</p>
+                <div class="xml-output">&lt;sheikhcanvas&gt;
+  &lt;output&gt;
+    &lt;word&gt;আলো&lt;/word&gt;
+    &lt;pronunciation&gt;Ah-lo&lt;/pronunciation&gt;
+    &lt;meaning&gt;Light&lt;/meaning&gt;
+    &lt;example&gt;ঘরে আলো জ্বালাও।&lt;/example&gt;
+    &lt;translation&gt;Turn on the light in the room.&lt;/translation&gt;
+  &lt;/output&gt;
+&lt;/sheikhcanvas&gt;</div>
+            </div>
+
+            <div class="section">
+                <h2>🚀 Quick Start</h2>
+                <div class="demo-box">
+                    <h3>1. Installation</h3>
+                    <code>pip install transformers torch safetensors</code>
+                </div>
+
+                <div class="demo-box">
+                    <h3>2. Load the Model</h3>
+                    <code>from transformers import GPT2LMHeadModel, GPT2Tokenizer
+
+# Download model from GitHub Release
+model = GPT2LMHeadModel.from_pretrained("./alo_bangla_model")
+tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
+
+# Generate Bengali vocabulary
+prompt = "Generate Bengali word: "
+inputs = tokenizer(prompt, return_tensors="pt")
+outputs = model.generate(**inputs, max_length=100)
+print(tokenizer.decode(outputs[0]))</code>
+                </div>
+
+                <div class="demo-box">
+                    <h3>3. Download Model Files</h3>
+                    <p>Download the pre-trained model from GitHub Release:</p>
+                    <a href="https://github.com/likhonsdevbd/alo_bangla/releases/download/v1.0.0/model.safetensors" class="button">
+                        📥 Download Model (475MB)
+                    </a>
+                    <a href="https://github.com/likhonsdevbd/alo_bangla" class="button button-secondary">
+                        📂 View Repository
+                    </a>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>📚 Training Data</h2>
+                <p>The model was trained on 77 carefully curated Bengali vocabulary examples covering:</p>
+                <ul style="margin-left: 30px; margin-top: 15px; line-height: 2;">
+                    <li>Common everyday words and phrases</li>
+                    <li>Cultural context and usage patterns</li>
+                    <li>Phonetic pronunciations for non-native speakers</li>
+                    <li>Real-world example sentences with translations</li>
+                    <li>Grammar structures and word relationships</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>💻 Technical Specifications</h2>
+                <div class="demo-box">
+                    <strong>Base Model:</strong> GPT-2 (124M parameters)<br>
+                    <strong>Training Framework:</strong> Hugging Face Transformers<br>
+                    <strong>Model Format:</strong> SafeTensors<br>
+                    <strong>Vocabulary Size:</strong> 50,257 tokens<br>
+                    <strong>Context Length:</strong> 1024 tokens<br>
+                    <strong>Training Examples:</strong> 77 Bengali vocabulary items<br>
+                    <strong>Output Format:</strong> SheikhCanvas XML schema
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>🌐 Use Cases</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h3>🎓 Language Learning Apps</h3>
+                        <p>Build interactive Bengali vocabulary trainers</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>📱 Mobile Applications</h3>
+                        <p>Integrate Bengali word suggestions</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>🤖 Chatbots</h3>
+                        <p>Create Bengali-English conversational agents</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>📖 Educational Tools</h3>
+                        <p>Generate structured learning materials</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>🔗 Resources</h2>
+                <div style="text-align: center; margin-top: 30px;">
+                    <a href="https://github.com/likhonsdevbd/alo_bangla" class="button">
+                        🏠 GitHub Repository
+                    </a>
+                    <a href="https://github.com/likhonsdevbd/alo_bangla/releases" class="button">
+                        📦 Releases
+                    </a>
+                    <a href="https://github.com/likhonsdevbd/alo_bangla/blob/main/README.md" class="button">
+                        📄 Documentation
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p style="font-size: 1.2em; margin-bottom: 10px;">
+                <strong>Alo Bangla</strong> - Illuminating Bengali Language Learning
+            </p>
+            <p style="opacity: 0.8;">
+                Created with ❤️ for the Bengali language community
+            </p>
+            <p style="margin-top: 20px; opacity: 0.7;">
+                © 2025 likhonsdevbd | Licensed under MIT
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
