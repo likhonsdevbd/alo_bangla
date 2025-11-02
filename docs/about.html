@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Alo Bangla | সম্পর্কে - আলো বাংলা</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://png.pngtree.com/png-vector/20220705/ourmid/pngtree-sun-icon-logo-png-png-image_5687131.png">
+    
+    <!-- Solaiman Lipi Font (Minified for Performance) -->
+    <link href="https://banglawebfonts.pages.dev/css/solaiman-lipi.min.css" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Solaiman Lipi', serif;
+            font-weight: 400;
+            font-style: normal;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            line-height: 1.8;
+        }
+        
+        /* Navigation */
+        nav {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 15px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        nav .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #667eea;
+        }
+        
+        .logo img {
+            width: 40px;
+            height: 40px;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: #667eea;
+        }
+        
+        /* Header Banner */
+        header {
+            background: url('https://img.freepik.com/premium-photo/boho-sun-flat-lay-illustration-header-banner-design-artwork-sunrise-sunshine-sunset_720095-805.jpg') center/cover;
+            text-align: center;
+            color: white;
+            padding: 100px 20px;
+            position: relative;
+            animation: fadeIn 1s;
+        }
+        
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(102, 126, 234, 0.7);
+        }
+        
+        header .content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        h1 {
+            font-size: 3.5em;
+            margin-bottom: 10px;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.4);
+        }
+        
+        .subtitle {
+            font-size: 1.4em;
+            opacity: 0.95;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .main-content {
+            background: white;
+            border-radius: 20px;
+            padding: 50px;
+            margin-top: 30px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            animation: slideUp 1s;
+        }
+        
+        .section {
+            margin-bottom: 50px;
+        }
+        
+        h2 {
+            color: #667eea;
+            margin-bottom: 25px;
+            font-size: 2.2em;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 15px;
+        }
+        
+        h3 {
+            color: #764ba2;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.6em;
+        }
+        
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+            line-height: 2;
+        }
+        
+        .bilingual-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin: 30px 0;
+        }
+        
+        @media (max-width: 768px) {
+            .bilingual-section {
+                grid-template-columns: 1fr;
+            }
+            
+            .nav-links {
+                gap: 15px;
+                font-size: 0.9em;
+            }
+        }
+        
+        .lang-panel {
+            background: #f8f9ff;
+            padding: 30px;
+            border-radius: 15px;
+            border-left: 5px solid #667eea;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .highlight-box h3 {
+            color: white;
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+        
+        .team-card {
+            background: #f8f9ff;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin: 30px 0;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+        }
+        
+        .team-card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        
+        .team-card h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        
+        .social-links {
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            display: inline-block;
+            padding: 12px 25px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            margin: 5px;
+            transition: all 0.3s;
+            font-weight: bold;
+        }
+        
+        .social-links a:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.5);
+        }
+        
+        ul {
+            margin-left: 30px;
+            line-height: 2.2;
+            font-size: 1.1em;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes slideUp {
+            from { 
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to { 
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        footer {
+            background: rgba(0, 0, 0, 0.2);
+            text-align: center;
+            color: white;
+            padding: 40px 20px;
+            margin-top: 50px;
+            border-radius: 20px 20px 0 0;
+        }
+        
+        .footer-credit {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        .footer-credit a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        
+        .footer-credit a:hover {
+            color: #ffd700;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <img src="https://png.pngtree.com/png-vector/20220705/ourmid/pngtree-sun-icon-logo-png-png-image_5687131.png" alt="Alo Bangla Logo">
+                <span>Alo Bangla</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">🏠 Home | হোম</a></li>
+                <li><a href="about.html">ℹ️ About | সম্পর্কে</a></li>
+                <li><a href="https://github.com/likhonsdevbd/alo_bangla">💻 GitHub</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header with Banner -->
+    <header>
+        <div class="content">
+            <h1>ℹ️ সম্পর্কে / About</h1>
+            <p class="subtitle">আলো বাংলা প্রকল্প সম্পর্কে জানুন</p>
+            <p class="subtitle">Learn About the Alo Bangla Project</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="main-content">
+            <!-- Project Overview -->
+            <div class="section">
+                <h2>📖 প্রকল্প পরিচিতি / Project Overview</h2>
+                <div class="bilingual-section">
+                    <div class="lang-panel">
+                        <h3>🇧🇩 বাংলা</h3>
+                        <p><strong>আলো বাংলা</strong> একটি উদ্ভাবনী AI-চালিত বাংলা ভাষা শিক্ষা মডেল যা GPT-2 আর্কিটেকচারের উপর ভিত্তি করে তৈরি। এই প্রকল্পের মূল উদ্দেশ্য বাংলা শব্দভাণ্ডার শেখা এবং ব্যবহার করা সহজ করা।</p>
+                        
+                        <p><strong>"আলো"</strong> শব্দের অর্থ <em>আলোকিত করা, আলো ছড়ানো</em> — এই প্রকল্পের লক্ষ্যও তাই: বাংলা ভাষাকে প্রযুক্তির মাধ্যমে আরও সহজলভ্য এবং শিক্ষণীয় করে তোলা।</p>
+                        
+                        <h3>🎯 মূল লক্ষ্য</h3>
+                        <ul>
+                            <li>বাংলা ভাষা শিক্ষার্থীদের জন্য AI-চালিত শিক্ষা সরঞ্জাম তৈরি</li>
+                            <li>কাঠামোগত এবং সহজবোধ্য শব্দভাণ্ডার আউটপুট প্রদান</li>
+                            <li>উচ্চারণ, অর্থ এবং বাস্তব-জীবনের উদাহরণ অন্তর্ভুক্তকরণ</li>
+                            <li>বাংলা এনএলপি এবং মেশিন লার্নিং গবেষণায় অবদান রাখা</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="lang-panel">
+                        <h3>🌍 English</h3>
+                        <p><strong>Alo Bangla</strong> is an innovative AI-powered Bengali language learning model built on the GPT-2 architecture. The main goal of this project is to make learning and using Bengali vocabulary easier and more accessible.</p>
+                        
+                        <p>The word <strong>"Alo"</strong> means <em>light, illumination</em> — and that's exactly what this project aims to do: illuminate the Bengali language through technology, making it more accessible and learnable.</p>
+                        
+                        <h3>🎯 Main Goals</h3>
+                        <ul>
+                            <li>Create AI-powered learning tools for Bengali language learners</li>
+                            <li>Provide structured and easy-to-understand vocabulary output</li>
+                            <li>Include pronunciation, meaning, and real-life examples</li>
+                            <li>Contribute to Bengali NLP and machine learning research</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vision & Mission -->
+            <div class="section">
+                <h2>🌟 দৃষ্টিভঙ্গি এবং মিশন / Vision & Mission</h2>
+                <div class="highlight-box">
+                    <h3>আমাদের দৃষ্টিভঙ্গি / Our Vision</h3>
+                    <p style="font-size: 1.2em;">
+                        একটি বিশ্ব তৈরি করা যেখানে বাংলা ভাষা শেখা এবং ব্যবহার AI প্রযুক্তির মাধ্যমে সহজ, মজাদার এবং সবার জন্য সুলভ।
+                    </p>
+                    <p style="font-size: 1.1em; opacity: 0.9;">
+                        Creating a world where learning and using Bengali is easy, fun, and accessible to everyone through AI technology.
+                    </p>
+                </div>
+
+                <div class="bilingual-section">
+                    <div class="lang-panel">
+                        <h3>আমাদের মিশন</h3>
+                        <ul>
+                            <li>উচ্চ-মানের বাংলা এনএলপি মডেল উন্নয়ন</li>
+                            <li>মুক্ত-উৎস এবং সহজলভ্য শিক্ষা সংস্থান প্রদান</li>
+                            <li>বাংলাদেশী প্রযুক্তি সম্প্রদায়ের সাথে সহযোগিতা</li>
+                            <li>বাংলা ভাষা প্রযুক্তি গবেষণায় নতুন মান স্থাপন</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="lang-panel">
+                        <h3>Our Mission</h3>
+                        <ul>
+                            <li>Develop high-quality Bengali NLP models</li>
+                            <li>Provide open-source and accessible learning resources</li>
+                            <li>Collaborate with the Bangladeshi tech community</li>
+                            <li>Set new standards in Bengali language technology research</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technology Stack -->
+            <div class="section">
+                <h2>⚙️ প্রযুক্তি স্ট্যাক / Technology Stack</h2>
+                <div class="bilingual-section">
+                    <div class="lang-panel">
+                        <h3>ব্যবহৃত প্রযুক্তি</h3>
+                        <ul>
+                            <li><strong>বেস মডেল:</strong> GPT-2 (124M Parameters)</li>
+                            <li><strong>ফ্রেমওয়ার্ক:</strong> Hugging Face Transformers</li>
+                            <li><strong>প্রশিক্ষণ:</strong> PyTorch</li>
+                            <li><strong>ডেটা ফর্ম্যাট:</strong> SheikhCanvas XML</li>
+                            <li><strong>মডেল ফর্ম্যাট:</strong> SafeTensors</li>
+                            <li><strong>হোস্টিং:</strong> GitHub Pages</li>
+                            <li><strong>ভার্সন কন্ট্রোল:</strong> Git & GitHub</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="lang-panel">
+                        <h3>Technologies Used</h3>
+                        <ul>
+                            <li><strong>Base Model:</strong> GPT-2 (124M Parameters)</li>
+                            <li><strong>Framework:</strong> Hugging Face Transformers</li>
+                            <li><strong>Training:</strong> PyTorch</li>
+                            <li><strong>Data Format:</strong> SheikhCanvas XML</li>
+                            <li><strong>Model Format:</strong> SafeTensors</li>
+                            <li><strong>Hosting:</strong> GitHub Pages</li>
+                            <li><strong>Version Control:</strong> Git & GitHub</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team -->
+            <div class="section">
+                <h2>👨‍💻 টিম / Team</h2>
+                <div class="team-card">
+                    <img src="https://png.pngtree.com/png-vector/20220705/ourmid/pngtree-sun-icon-logo-png-png-image_5687131.png" alt="Likhon Sheikh">
+                    <h3>লিখন শেখ / Likhon Sheikh</h3>
+                    <p style="font-size: 1.2em; color: #764ba2; font-weight: bold;">প্রতিষ্ঠাতা ও প্রধান ডেভেলপার / Founder & Lead Developer</p>
+                    <p style="margin-top: 20px; font-size: 1.1em;">
+                        বাংলা ভাষা প্রযুক্তি এবং এআই-চালিত শিক্ষা সমাধানের প্রতি অনুরাগী। আলো বাংলা প্রকল্পের মাধ্যমে বাংলা ভাষাকে প্রযুক্তির অগ্রভাগে আনার স্বপ্ন দেখছেন।
+                    </p>
+                    <p style="font-size: 1.1em; opacity: 0.8;">
+                        Passionate about Bengali language technology and AI-powered learning solutions. Dreaming of bringing Bengali language to the forefront of technology through the Alo Bangla project.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://t.me/likhonsheikh" target="_blank">📱 Telegram</a>
+                        <a href="https://github.com/likhonsdevbd" target="_blank">💻 GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Future Plans -->
+            <div class="section">
+                <h2>🚀 ভবিষ্যৎ পরিকল্পনা / Future Plans</h2>
+                <div class="bilingual-section">
+                    <div class="lang-panel">
+                        <h3>আসন্ন বৈশিষ্ট্য</h3>
+                        <ul>
+                            <li>🌐 প্রথম আলো থেকে রিয়েল-টাইম ডেটা স্ক্র্যাপিং</li>
+                            <li>📚 শব্দভাণ্ডার আকার ৭৭ থেকে ১০,০০০+ এ সম্প্রসারণ</li>
+                            <li>🎙️ অডিও উচ্চারণ গাইড যোগ</li>
+                            <li>📱 মোবাইল অ্যাপ্লিকেশন ডেভেলপমেন্ট</li>
+                            <li>🤝 সম্প্রদায়-চালিত ডেটাসেট অবদান</li>
+                            <li>🧠 বৃহত্তর মডেল (GPT-3 স্কেল) প্রশিক্ষণ</li>
+                            <li>🌍 ইংরেজি-বাংলা দ্বিভাষিক মডেল</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="lang-panel">
+                        <h3>Upcoming Features</h3>
+                        <ul>
+                            <li>🌐 Real-time data scraping from Prothom Alo</li>
+                            <li>📚 Expanding vocabulary from 77 to 10,000+ items</li>
+                            <li>🎙️ Adding audio pronunciation guides</li>
+                            <li>📱 Mobile application development</li>
+                            <li>🤝 Community-driven dataset contributions</li>
+                            <li>🧠 Training larger models (GPT-3 scale)</li>
+                            <li>🌍 English-Bengali bilingual models</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contributing -->
+            <div class="section">
+                <h2>🤝 অবদান রাখুন / Contributing</h2>
+                <div class="bilingual-section">
+                    <div class="lang-panel">
+                        <h3>কিভাবে অবদান রাখবেন</h3>
+                        <p>আলো বাংলা একটি মুক্ত-উৎস প্রকল্প। আপনি বিভিন্ন উপায়ে অবদান রাখতে পারেন:</p>
+                        <ul>
+                            <li>🐛 বাগ রিপোর্ট এবং ফিচার অনুরোধ</li>
+                            <li>💻 কোড অবদান এবং পুল রিকোয়েস্ট</li>
+                            <li>📝 ডকুমেন্টেশন উন্নতি</li>
+                            <li>📊 নতুন প্রশিক্ষণ ডেটা যোগ</li>
+                            <li>🌐 অনুবাদ এবং স্থানীয়করণ</li>
+                        </ul>
+                        <p style="margin-top: 20px;">
+                            <a href="https://github.com/likhonsdevbd/alo_bangla" style="color: #667eea; font-weight: bold;">GitHub এ আমাদের সাথে যোগ দিন →</a>
+                        </p>
+                    </div>
+                    
+                    <div class="lang-panel">
+                        <h3>How to Contribute</h3>
+                        <p>Alo Bangla is an open-source project. You can contribute in various ways:</p>
+                        <ul>
+                            <li>🐛 Bug reports and feature requests</li>
+                            <li>💻 Code contributions and pull requests</li>
+                            <li>📝 Documentation improvements</li>
+                            <li>📊 Adding new training data</li>
+                            <li>🌐 Translation and localization</li>
+                        </ul>
+                        <p style="margin-top: 20px;">
+                            <a href="https://github.com/likhonsdevbd/alo_bangla" style="color: #667eea; font-weight: bold;">Join us on GitHub →</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact -->
+            <div class="section">
+                <h2>📞 যোগাযোগ / Contact</h2>
+                <div class="highlight-box">
+                    <h3>আমাদের সাথে যোগাযোগ করুন / Get in Touch</h3>
+                    <p style="font-size: 1.2em; margin-top: 20px;">
+                        প্রশ্ন, পরামর্শ বা সহযোগিতার জন্য যোগাযোগ করুন:<br>
+                        For questions, suggestions, or collaborations:
+                    </p>
+                    <div class="social-links" style="margin-top: 30px;">
+                        <a href="https://t.me/likhonsheikh" target="_blank">📱 Telegram: @likhonsheikh</a>
+                        <a href="https://github.com/likhonsdevbd/alo_bangla" target="_blank">💻 GitHub Repository</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p style="font-size: 1.3em; margin-bottom: 10px;">
+                <strong>🌟 আলো বাংলা / Alo Bangla</strong>
+            </p>
+            <p style="opacity: 0.9; font-size: 1.1em;">
+                বাংলা ভাষা শিক্ষাকে আলোকিত করা<br>
+                Illuminating Bengali Language Learning
+            </p>
+            <p style="margin-top: 20px; opacity: 0.8;">
+                বাংলা ভাষা সম্প্রদায়ের জন্য ❤️ দিয়ে তৈরি<br>
+                Created with ❤️ for the Bengali language community
+            </p>
+            <div class="footer-credit">
+                <p style="font-size: 1.1em;">
+                    <strong>Maintained by:</strong> 
+                    <a href="https://t.me/likhonsheikh" target="_blank">Likhon Sheikh</a> (Founder)
+                </p>
+                <p style="margin-top: 10px; opacity: 0.7;">
+                    © 2025 likhonsdevbd | Licensed under MIT
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
