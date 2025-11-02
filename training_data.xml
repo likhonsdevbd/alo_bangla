@@ -1,0 +1,1038 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+  <example>
+    <sheikhcanvas>Translate and explain: আশা করা (Aasha Kora)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla word</step>
+      <step>Provide English meaning</step>
+      <step>Explain usage and context</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘আশা করা’ মানে হলো to hope বা আশা রাখার কাজ। এটি ক্রিয়া (verb) এবং ভবিষ্যতের জন্য প্রত্যাশা প্রকাশ করে।</explain>
+      <word>আশা করা</word>
+      <meaning>to hope</meaning>
+      <example>আমি আগামীকাল ভালো খবরের আশা করছি।</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: চিকিৎসক (Chikitshok)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla noun</step>
+      <step>Provide English equivalent</step>
+      <step>Explain typical usage and profession</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘চিকিৎসক’ হলো Doctor, যিনি রোগ নিরাময় করেন। এটি একটি পেশাদার সত্তা।</explain>
+      <word>চিকিৎসক</word>
+      <meaning>Doctor</meaning>
+      <example>চিকিৎসক রোগীকে ওষুধ দিলেন।</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: চিকিৎসা (Chikitsha)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla word</step>
+      <step>Provide English meaning</step>
+      <step>Explain medical context</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘চিকিৎসা’ মানে treatment বা medical care। এটি রোগ সারানোর প্রক্রিয়া।</explain>
+      <word>চিকিৎসা</word>
+      <meaning>treatment</meaning>
+      <example>ডাক্তার তাকে চিকিৎসা দিচ্ছেন।</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: অধ্যাপক (Oddhapok)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla profession</step>
+      <step>Provide English equivalent</step>
+      <step>Explain educational context</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘অধ্যাপক’ হলো Professor, বিশ্ববিদ্যালয়ের উচ্চপদস্থ শিক্ষক।</explain>
+      <word>অধ্যাপক</word>
+      <meaning>Professor</meaning>
+      <example>অধ্যাপক আমাদের ইতিহাস পড়িয়েছেন।</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: কেক (Cake)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla word</step>
+      <step>Provide English meaning</step>
+      <step>Explain usage context</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘কেক’ মানে Cake, মিষ্টান্ন যা জন্মদিন বা অনুষ্ঠানে খাওয়া হয়।</explain>
+      <word>কেক</word>
+      <meaning>Cake</meaning>
+      <example>জন্মদিনে কেক কাটা হলো।</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: লেখা (Lekha)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla verb</step>
+      <step>Provide English meaning</step>
+      <step>Explain writing activity</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘লেখা’ মানে to write বা লিখন কাজ। এটি একটি সক্রিয় ক্রিয়া।</explain>
+      <word>লেখা</word>
+      <meaning>to write</meaning>
+      <example>আমি চিঠি লেখছি।</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: হাত (Haat)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla body part</step>
+      <step>Provide English meaning</step>
+      <step>Explain human anatomy</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘হাত’ মানে hand, মানব শরীরের অবিচ্ছেদ্য অংশ যা কাজের জন্য ব্যবহৃত হয়।</explain>
+      <word>হাত</word>
+      <meaning>hand</meaning>
+      <example>আমার হাতে ব্যথা আছে।</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: চামচ (Chamoch)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla kitchen item</step>
+      <step>Provide English meaning</step>
+      <step>Explain dining context</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘চামচ’ মানে spoon, খাবার খাওয়ার জন্য ব্যবহৃত টেবিলওয়্যার।</explain>
+      <word>চামচ</word>
+      <meaning>spoon</meaning>
+      <example>আমার চামচ দিয়ে সুপ খেতে হবে।</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: ভদ্র (Bhodro)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla adjective</step>
+      <step>Provide English meaning</step>
+      <step>Explain character quality</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘ভদ্র’ মানে gentle বা polite। এটি একটি বিশেষণ যা চরিত্রের মধুরতা প্রকাশ করে।</explain>
+      <word>ভদ্র</word>
+      <meaning>gentle / polite</meaning>
+      <example>রাহুল খুব ভদ্র ছেলে।</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: ভদ্রলোক (Bhodro-lok)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla noun</step>
+      <step>Provide English equivalent</step>
+      <step>Explain social context</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘ভদ্রলোক’ মানে gentleman, মার্জিত আচরণের পুরুষ।</explain>
+      <word>ভদ্রলোক</word>
+      <meaning>gentleman</meaning>
+      <example>ভদ্রলোকটি দরজা খুলে দিলেন।</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: ভদ্রতা (Bhodrota)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla noun</step>
+      <step>Provide English meaning</step>
+      <step>Explain behavioral quality</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘ভদ্রতা’ মানে politeness বা gentlemanship। এটি সৌজন্যের গুণ।</explain>
+      <word>ভদ্রতা</word>
+      <meaning>politeness / civility</meaning>
+      <example>তার ভদ্রতা সবার প্রশংসিত।</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: অভদ্র (Obhodro)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla adjective</step>
+      <step>Provide English meaning</step>
+      <step>Explain opposite of politeness</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘অভদ্র’ মানে rude বা impolite। ‘ভদ্র’ শব্দের বিপরীত।</explain>
+      <word>অভদ্র</word>
+      <meaning>rude / impolite</meaning>
+      <example>তার আচরণ অভদ্র।</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: নিশ্চিত (Nischito)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla adjective</step>
+      <step>Provide English meaning</step>
+      <step>Explain certainty context</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘নিশ্চিত’ মানে certain বা sure। এটি নির্দিষ্টতার অনুভূতি প্রকাশ করে।</explain>
+      <word>নিশ্চিত</word>
+      <meaning>certain / sure</meaning>
+      <example>আমি নিশ্চিত যে এটি ঠিক হবে।</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: সুদিন (Sudin)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla noun</step>
+      <step>Provide English meaning</step>
+      <step>Explain temporal context</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘সুদিন’ মানে good days। এটি সুখের সময়ের জন্য ব্যবহৃত হয়।</explain>
+      <word>সুদিন</word>
+      <meaning>good days</meaning>
+      <example>এখন সুদিন চলে এসেছে।</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: অঞ্চল (Onchol)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla noun</step>
+      <step>Provide English meaning</step>
+      <step>Explain geographical context</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘অঞ্চল’ মানে region বা area। এটি ভৌগোলিক এলাকা নির্দেশ করে।</explain>
+      <word>অঞ্চল</word>
+      <meaning>region / area</meaning>
+      <example>এই অঞ্চলে বৃষ্টি হয় না।</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: সবচেয়ে (Shobcheye)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla adverb</step>
+      <step>Provide English meaning</step>
+      <step>Explain comparative usage</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘সবচেয়ে’ মানে most বা the most। এটি তুলনামূলক ডিগ্রি প্রকাশ করে।</explain>
+      <word>সবচেয়ে</word>
+      <meaning>most / the most</meaning>
+      <example>সবচেয়ে ভালো বইটি পড়ছি।</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: সমান (Soman)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla adjective</step>
+      <step>Provide English meaning</step>
+      <step>Explain equality context</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘সমান’ মানে equal বা same। এটি সমতা বা তুলনার জন্য ব্যবহৃত হয়।</explain>
+      <word>সমান</word>
+      <meaning>equal / same</meaning>
+      <example>সবার সমান অধিকার আছে।</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: এলাকা (Eleka)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla noun</step>
+      <step>Provide English meaning</step>
+      <step>Explain location context</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘এলাকা’ মানে area বা locality। এটি নির্দিষ্ট অঞ্চল বোঝায়।</explain>
+      <word>এলাকা</word>
+      <meaning>area / locality</meaning>
+      <example>এই এলাকাটি খুব শান্ত।</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: সাহায্যকারী (Sha-hajjo-kari)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla noun</step>
+      <step>Provide English meaning</step>
+      <step>Explain helper context</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘সাহায্যকারী’ মানে helper বা assistant। এটি সেবা প্রদানকারী ব্যক্তি।</explain>
+      <word>সাহায্যকারী</word>
+      <meaning>helper / assistant</meaning>
+      <example>সাহায্যকারী আমাকে তথ্য দিয়েছেন।</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: শব্দ (Shobdo)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla noun</step>
+      <step>Provide English meaning</step>
+      <step>Explain linguistic context</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘শব্দ’ মানে word বা sound। এটি ভাষার মূল উপাদান।</explain>
+      <word>শব্দ</word>
+      <meaning>word / sound</meaning>
+      <example>এই শব্দটির অর্থ কি?</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: অজানা (Ojana)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla adjective</step>
+      <step>Provide English meaning</step>
+      <step>Explain unknown context</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘অজানা’ মানে unknown বা unfamiliar। এটি অপরিচিত তথ্যের জন্য ব্যবহৃত হয়।</explain>
+      <word>অজানা</word>
+      <meaning>unknown</meaning>
+      <example>এই ব্যাপারটি আমার কাছে অজানা।</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: জানা (Jana)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla verb</step>
+      <step>Provide English meaning</step>
+      <step>Explain knowledge context</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘জানা’ মানে to know বা to be aware। এটি জ্ঞানের অবস্থা প্রকাশ করে।</explain>
+      <word>জানা</word>
+      <meaning>to know</meaning>
+      <example>আমি এই গল্পটি জানি।</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: শান্ত (Shanto)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla adjective</step>
+      <step>Provide English meaning</step>
+      <step>Explain emotional state</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘শান্ত’ মানে calm বা peaceful। এটি মানসিক শান্তির অবস্থা।</explain>
+      <word>শান্ত</word>
+      <meaning>calm / peaceful</meaning>
+      <example>সমুদ্রের জল শান্ত।</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: শান্তি (Shanti)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla noun</step>
+      <step>Provide English meaning</step>
+      <step>Explain peace context</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘শান্তি’ মানে peace বা tranquility। এটি শান্ত অবস্থার জন্য ব্যবহৃত হয়।</explain>
+      <word>শান্তি</word>
+      <meaning>peace / tranquility</meaning>
+      <example>আমার মনে শান্তি নেই।</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: চঞ্চল (Chonchol)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla adjective</step>
+      <step>Provide English meaning</step>
+      <step>Explain restless behavior</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘চঞ্চল’ মানে restless বা hyperactive। এটি অশান্ত আচরণ প্রকাশ করে।</explain>
+      <word>চঞ্চল</word>
+      <meaning>restless / hyperactive</meaning>
+      <example>ছেলেটি চঞ্চল প্রকৃতির।</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: উত্তর (Uttor)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla noun</step>
+      <step>Provide English meaning</step>
+      <step>Explain response context</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘উত্তর’ মানে answer বা reply। এটি প্রশ্নের জবাব।</explain>
+      <word>উত্তর</word>
+      <meaning>answer / reply</meaning>
+      <example>তুমি উত্তর দাও।</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: ত্রাস (traash)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla noun</step>
+      <step>Provide English meaning</step>
+      <step>Explain fear context</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘ত্রাস’ মানে terror বা panic। এটি গভীর ভয়ের অনুভূতি।</explain>
+      <word>ত্রাস</word>
+      <meaning>terror / panic</meaning>
+      <example>ভয়ে সবার মনে ত্রাস।</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: অবস্থা (Obostha)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla noun</step>
+      <step>Provide English meaning</step>
+      <step>Explain situation context</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘অবস্থা’ মানে condition বা state। এটি বর্তমান পরিস্থিতি নির্দেশ করে।</explain>
+      <word>অবস্থা</word>
+      <meaning>condition / state</meaning>
+      <example>আমার স্বাস্থ্যের অবস্থা ভালো।</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: পরিস্থিতি (Poristhiti)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla noun</step>
+      <step>Provide English meaning</step>
+      <step>Explain scenario context</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘পরিস্থিতি’ মানে situation বা circumstances। এটি বিস্তারিত প্রেক্ষাপট।</explain>
+      <word>পরিস্থিতি</word>
+      <meaning>situation / circumstances</meaning>
+      <example>এই পরিস্থিতি মোকাবেলা করা কঠিন।</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: দারুণ (Darun)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla adjective</step>
+      <step>Provide English meaning</step>
+      <step>Explain positive quality</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘দারুণ’ মানে excellent বা amazing। এটি প্রশংসার জন্য ব্যবহৃত হয়।</explain>
+      <word>দারুণ</word>
+      <meaning>excellent / amazing</meaning>
+      <example>আপনার কাজ দারুণ।</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: নিদারুণ (Nidarun)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla adjective</step>
+      <step>Provide English meaning</step>
+      <step>Explain negative quality</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘নিদারুণ’ মানে terrible বা awful। ‘দারুণ’ এর বিপরীত।</explain>
+      <word>নিদারুণ</word>
+      <meaning>terrible / awful</meaning>
+      <example>আবহাওয়া নিদারুণ।</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: দারুচিনি (Daruchini)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla noun</step>
+      <step>Provide English meaning</step>
+      <step>Explain spice context</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘দারুচিনি’ মানে cinnamon। এটি একটি সুগন্ধি মশলা।</explain>
+      <word>দারুচিনি</word>
+      <meaning>cinnamon</meaning>
+      <example>এতে দারুচিনি দিয়েছি।</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: বিজ্ঞাপন (Biggapon)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla noun</step>
+      <step>Provide English meaning</step>
+      <step>Explain marketing context</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘বিজ্ঞাপন’ মানে advertisement। এটি পণ্য বা সেবার প্রচারের জন্য ব্যবহৃত হয়।</explain>
+      <word>বিজ্ঞাপন</word>
+      <meaning>advertisement</meaning>
+      <example>টেলিভিশনে বিজ্ঞাপন দেখলাম।</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: চলে যাওয়া (Chole jaoa)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla verb</step>
+      <step>Provide English meaning</step>
+      <step>Explain departure context</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘চলে যাওয়া’ মানে to leave বা to depart। এটি একটি সম্পূর্ণ কার্যক্রম।</explain>
+      <word>চলে যাওয়া</word>
+      <meaning>to leave / to depart</meaning>
+      <example>আমি এখন চলে যাচ্ছি।</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: ঘনিষ্ঠ (Ghonishtho)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla adjective</step>
+      <step>Provide English meaning</step>
+      <step>Explain relationship context</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘ঘনিষ্ঠ’ মানে close বা intimate। এটি ব্যক্তিগত সম্পর্ক প্রকাশ করে।</explain>
+      <word>ঘনিষ্ঠ</word>
+      <meaning>close / intimate</meaning>
+      <example>আমি তার ঘনিষ্ঠ বন্ধু।</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: পড়াশুনা করা (Porashuna Kora)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla verb</step>
+      <step>Provide English meaning</step>
+      <step>Explain learning activity</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘পড়াশুনা করা’ মানে to study বা to learn। এটি শিক্ষার প্রক্রিয়া।</explain>
+      <word>পড়াশুনা করা</word>
+      <meaning>to study</meaning>
+      <example>আমি গণিত পড়াশুনা করছি।</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: দরকারি (Dorkari)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla adjective</step>
+      <step>Provide English meaning</step>
+      <step>Explain necessity context</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘দরকারি’ মানে necessary বা important। এটি প্রয়োজনের অনুভূতি প্রকাশ করে।</explain>
+      <word>দরকারি</word>
+      <meaning>necessary / important</meaning>
+      <example>এই বইটি দরকারি।</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: টুপি (Tupi)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla noun</step>
+      <step>Provide English meaning</step>
+      <step>Explain clothing context</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘টুপি’ মানে hat। এটি মাথায় পরা পোশাক।</explain>
+      <word>টুপি</word>
+      <meaning>hat</meaning>
+      <example>আমার টুপি খুব সুন্দর।</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: গন্ধ (Gondho)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla noun</step>
+      <step>Provide English meaning</step>
+      <step>Explain sensory experience</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘গন্ধ’ মানে smell। এটি ঘ্রাণের অনুভূতি।</explain>
+      <word>গন্ধ</word>
+      <meaning>smell</meaning>
+      <example>এখানে খুব সুন্দর গন্ধ।</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: সুগন্ধ (Sugondho)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla noun</step>
+      <step>Provide English meaning</step>
+      <step>Explain pleasant smell</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘সুগন্ধ’ মানে fragrance বা pleasant smell। এটি আনন্দদায়ক ঘ্রাণ।</explain>
+      <word>সুগন্ধ</word>
+      <meaning>fragrance / pleasant smell</meaning>
+      <example>ফুলে সুগন্ধ আছে।</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: দুর্গন্ধ (Durgondho)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla noun</step>
+      <step>Provide English meaning</step>
+      <step>Explain unpleasant smell</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘দুর্গন্ধ’ মানে bad smell। ‘সুগন্ধ’ এর বিপরীত।</explain>
+      <word>দুর্গন্ধ</word>
+      <meaning>bad smell</meaning>
+      <example>পানিতে দুর্গন্ধ আছে।</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: ধন্যবাদ (Dhonnobad)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla expression</step>
+      <step>Provide English meaning</step>
+      <step>Explain gratitude context</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘ধন্যবাদ’ মানে thanks বা gratitude। এটি কৃতজ্ঞতা প্রকাশের শব্দ।</explain>
+      <word>ধন্যবাদ</word>
+      <meaning>thanks / gratitude</meaning>
+      <example>আপনার সাহায্যের জন্য ধন্যবাদ।</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: একক পরিবার (Ekok poribar)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla phrase</step>
+      <step>Provide English meaning</step>
+      <step>Explain family structure</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘একক পরিবার’ মানে nuclear family। এটি পিতামাতা ও সন্তানদের পারিবারিক একক।</explain>
+      <word>একক পরিবার</word>
+      <meaning>nuclear family</meaning>
+      <example>আমার একক পরিবারে চারজন আছে।</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: বৃহৎ পরিবার (Baro poribar)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla phrase</step>
+      <step>Provide English meaning</step>
+      <step>Explain extended family</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘বৃহৎ পরিবার’ মানে extended family। এটি কয়েক প্রজন্মের পারিবারিক সদস্যদের সমষ্টি।</explain>
+      <word>বৃহৎ পরিবার</word>
+      <meaning>extended family</meaning>
+      <example>বৃহৎ পরিবারে বেশি লোক থাকে।</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: লেখাপড়া করা (Lekha pora kora)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla phrase</step>
+      <step>Provide English meaning</step>
+      <step>Explain education activity</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘লেখাপড়া করা’ মানে to study (both reading and writing)। এটি সম্পূর্ণ শিক্ষা প্রক্রিয়া।</explain>
+      <word>লেখাপড়া করা</word>
+      <meaning>to study (reading & writing)</meaning>
+      <example>আমি লেখাপড়া করছি।</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: কতদিন ধরে (Kotodin dhore)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla phrase</step>
+      <step>Provide English meaning</step>
+      <step>Explain temporal duration</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘কতদিন ধরে’ মানে for how long (have you been)। এটি সময়ের পরিমাণ জানতে ব্যবহৃত হয়।</explain>
+      <word>কতদিন ধরে</word>
+      <meaning>for how long (have you been)</meaning>
+      <example>তুমি কতদিন ধরে অসুস্থ?</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: কতদিনের জন্য (Kotodiner jonno)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla phrase</step>
+      <step>Provide English meaning</step>
+      <step>Explain future duration</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘কতদিনের জন্য’ মানে for how long (for what period)। ভবিষ্যতের সময়কালের জন্য ব্যবহৃত।</explain>
+      <word>কতদিনের জন্য</word>
+      <meaning>for how long (for what period)</meaning>
+      <example>তুমি কতদিনের জন্য থাকবে?</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: উত্তর দেওয়া (Uttor deoa)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla phrase</step>
+      <step>Provide English meaning</step>
+      <step>Explain response activity</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘উত্তর দেওয়া’ মানে to answer বা to reply। এটি জবাব প্রদানের কাজ।</explain>
+      <word>উত্তর দেওয়া</word>
+      <meaning>to answer / to reply</meaning>
+      <example>আমি প্রশ্নের উত্তর দিয়েছি।</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: অবস্থা (Obostha)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla noun</step>
+      <step>Provide English meaning</step>
+      <step>Explain current condition</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘অবস্থা’ মানে condition বা situation। এটি বর্তমান অবস্থা নির্দেশ করে।</explain>
+      <word>অবস্থা</word>
+      <meaning>condition / situation</meaning>
+      <example>আবহাওয়ার অবস্থা ভালো।</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: পরিস্থিতি (Poristhiti)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla noun</step>
+      <step>Provide English meaning</step>
+      <step>Explain complex context</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘পরিস্থিতি’ মানে situation বা circumstances। এটি জটিল প্রেক্ষাপট।</explain>
+      <word>পরিস্থিতি</word>
+      <meaning>situation / circumstances</meaning>
+      <example>এই পরিস্থিতি খুব কঠিন।</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: দারুণ (Darun)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla adjective</step>
+      <step>Provide English meaning</step>
+      <step>Explain excellent quality</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘দারুণ’ মানে excellent বা amazing। এটি প্রশংসার জন্য ব্যবহৃত হয়।</explain>
+      <word>দারুণ</word>
+      <meaning>excellent / amazing</meaning>
+      <example>আপনার কাজ দারুণ হয়েছে।</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: নিদারুণ (Nidarun)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla adjective</step>
+      <step>Provide English meaning</step>
+      <step>Explain terrible quality</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘নিদারুণ’ মানে terrible বা awful। ‘দারুণ’ এর বিপরীত।</explain>
+      <word>নিদারুণ</word>
+      <meaning>terrible / awful</meaning>
+      <example>আবহাওয়া নিদারুণ হয়েছে।</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: দারুচিনি (Daruchini)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla noun</step>
+      <step>Provide English meaning</step>
+      <step>Explain spice context</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘দারুচিনি’ মানে cinnamon। এটি একটি সুগন্ধি মশলা।</explain>
+      <word>দারুচিনি</word>
+      <meaning>cinnamon</meaning>
+      <example>কেকে দারুচিনি দেওয়া হয়।</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: বিজ্ঞাপন (Biggapon)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla noun</step>
+      <step>Provide English meaning</step>
+      <step>Explain advertising context</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘বিজ্ঞাপন’ মানে advertisement। এটি পণ্য বা সেবার প্রচার।</explain>
+      <word>বিজ্ঞাপন</word>
+      <meaning>advertisement</meaning>
+      <example>টিভিতে বিজ্ঞাপন দেখলাম।</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: চলে যাওয়া (Chole jaoa)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla verb</step>
+      <step>Provide English meaning</step>
+      <step>Explain leaving action</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘চলে যাওয়া’ মানে to leave। এটি একটি সম্পূর্ণ কার্যক্রম।</explain>
+      <word>চলে যাওয়া</word>
+      <meaning>to leave</meaning>
+      <example>আমি এখন চলে যাচ্ছি।</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: ঘনিষ্ঠ (Ghonishtho)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla adjective</step>
+      <step>Provide English meaning</step>
+      <step>Explain close relationship</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘ঘনিষ্ঠ’ মানে close বা intimate। এটি ঘনিষ্ঠতার অনুভূতি।</explain>
+      <word>ঘনিষ্ঠ</word>
+      <meaning>close / intimate</meaning>
+      <example>তারা ঘনিষ্ঠ বন্ধু।</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: পড়াশুনা করা (Porashuna Kora)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla verb</step>
+      <step>Provide English meaning</step>
+      <step>Explain study activity</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘পড়াশুনা করা’ মানে to study। এটি শিক্ষার প্রক্রিয়া।</explain>
+      <word>পড়াশুনা করা</word>
+      <meaning>to study</meaning>
+      <example>আমি বই পড়াশুনা করছি।</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: দরকারি (Dorkari)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla adjective</step>
+      <step>Provide English meaning</step>
+      <step>Explain necessity</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘দরকারি’ মানে necessary বা important। এটি প্রয়োজনের অনুভূতি।</explain>
+      <word>দরকারি</word>
+      <meaning>necessary / important</meaning>
+      <example>এই বিষয়টি দরকারি।</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: টুপি (Tupi)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla noun</step>
+      <step>Provide English meaning</step>
+      <step>Explain headwear</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘টুপি’ মানে hat। এটি মাথার পোশাক।</explain>
+      <word>টুপি</word>
+      <meaning>hat</meaning>
+      <example>আমার লাল টুপি আছে।</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: গন্ধ (Gondho)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla noun</step>
+      <step>Provide English meaning</step>
+      <step>Explain smell</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘গন্ধ’ মানে smell। এটি ঘ্রাণের অনুভূতি।</explain>
+      <word>গন্ধ</word>
+      <meaning>smell</meaning>
+      <example>এখানে খারাপ গন্ধ।</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: সুগন্ধ (Sugondho)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla noun</step>
+      <step>Provide English meaning</step>
+      <step>Explain pleasant smell</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘সুগন্ধ’ মানে fragrance। এটি সুন্দর গন্ধ।</explain>
+      <word>সুগন্ধ</word>
+      <meaning>fragrance</meaning>
+      <example>গোলাপে সুগন্ধ আছে।</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: দুর্গন্ধ (Durgondho)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla noun</step>
+      <step>Provide English meaning</step>
+      <step>Explain bad smell</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘দুর্গন্ধ’ মানে bad smell। ‘সুগন্ধ’ এর বিপরীত।</explain>
+      <word>দুর্গন্ধ</word>
+      <meaning>bad smell</meaning>
+      <example>বাথরুমে দুর্গন্ধ।</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: আপাতত (Apatoto)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla adverb</step>
+      <step>Provide English meaning</step>
+      <step>Explain temporary context</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘আপাতত’ মানে for now বা temporarily। এটি সাময়িক অবস্থার জন্য ব্যবহৃত।</explain>
+      <word>আপাতত</word>
+      <meaning>for now / temporarily</meaning>
+      <example>আপাতত এই কাজ সম্পন্ন হয়েছে।</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: ভিন্ন (Bhinno)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla adjective</step>
+      <step>Provide English meaning</step>
+      <step>Explain difference context</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘ভিন্ন’ মানে different বা various। এটি পার্থক্যের অনুভূতি প্রকাশ করে।</explain>
+      <word>ভিন্ন</word>
+      <meaning>different / various</meaning>
+      <example>আমার ভিন্ন মতামত আছে।</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: জোরে (Jore)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla adverb</step>
+      <step>Provide English meaning</step>
+      <step>Explain loud manner</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘জোরে’ মানে loudly বা with force। এটি শক্তিশালী উপায়ে।</explain>
+      <word>জোরে</word>
+      <meaning>loudly / with force</meaning>
+      <example>তুমি জোরে কথা বলছো।</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: ধীরে (Dhire)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla adverb</step>
+      <step>Provide English meaning</step>
+      <step>Explain slow manner</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘ধীরে’ মানে slowly বা gently। এটি ধীরগতিতে।</explain>
+      <word>ধীরে</word>
+      <meaning>slowly / gently</meaning>
+      <example>তুমি ধীরে হাঁটছো।</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: দেখান (Dekhano)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla verb</step>
+      <step>Provide English meaning</step>
+      <step>Explain showing action</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘দেখান’ মানে to show বা to display। এটি প্রদর্শনের কাজ।</explain>
+      <word>দেখান</word>
+      <meaning>to show / to display</meaning>
+      <example>তুমি আমাকে ছবিটা দেখাও।</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: হয়ত (Hoyto)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla adverb</step>
+      <step>Provide English meaning</step>
+      <step>Explain uncertainty context</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘হয়ত’ মানে perhaps বা probably। এটি অনিশ্চিততার অনুভূতি।</explain>
+      <word>হয়ত</word>
+      <meaning>perhaps / probably</meaning>
+      <example>হয়ত আজ বৃষ্টি হবে।</example>
+    </output>
+  </example>
+
+  <example>
+    <sheikhcanvas>Translate and explain: হতে পারে (Hote paare)</sheikhcanvas>
+    <sheikhonactions>
+      <step>Identify the Bangla phrase</step>
+      <step>Provide English meaning</step>
+      <step>Explain possibility context</step>
+    </sheikhonactions>
+    <output>
+      <explain>‘হতে পারে’ মানে maybe বা could be। এটি সম্ভাবনার অনুভূতি।</explain>
+      <word>হতে পারে</word>
+      <meaning>maybe / could be</meaning>
+      <example>এটি সত্যি হতে পারে।</example>
+    </output>
+  </example>
+
+</dataset>
