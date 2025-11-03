@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alo Bangla AI Chat - Bengali Language Model</title>
+    
+    <!-- Bengali Font -->
+    <link rel="stylesheet" href="https://banglawebfonts.pages.dev/css/solaiman-lipi.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://png.pngtree.com/png-vector/20220705/ourmid/pngtree-sun-icon-logo-png-png-image_5687131.png">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'SolaimanLipi', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            max-width: 900px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 20px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            color: #667eea;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        .info-box {
+            background: rgba(255, 243, 205, 0.95);
+            border-left: 4px solid #f59e0b;
+            padding: 15px 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .info-box h3 {
+            color: #92400e;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        .info-box p {
+            color: #78350f;
+            line-height: 1.6;
+            margin-bottom: 8px;
+        }
+
+        .info-box a {
+            color: #b45309;
+            text-decoration: underline;
+        }
+
+        .status-bar {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 15px 20px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .status-indicator {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 600;
+        }
+
+        .status-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #fbbf24;
+            animation: pulse 2s infinite;
+        }
+
+        .status-dot.ready {
+            background: #10b981;
+            animation: none;
+        }
+
+        .status-dot.error {
+            background: #ef4444;
+            animation: none;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        .progress-container {
+            display: none;
+            margin-top: 10px;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 6px;
+            background: #e5e7eb;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+
+        .progress-text {
+            font-size: 0.875rem;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        .chat-container {
+            flex: 1;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 20px;
+            margin-bottom: 20px;
+            overflow-y: auto;
+            min-height: 400px;
+            max-height: 500px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .message {
+            margin-bottom: 20px;
+            display: flex;
+            animation: slideIn 0.3s ease;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .message.user {
+            justify-content: flex-end;
+        }
+
+        .message.ai {
+            justify-content: flex-start;
+        }
+
+        .message-bubble {
+            max-width: 70%;
+            padding: 15px 20px;
+            border-radius: 20px;
+            word-wrap: break-word;
+        }
+
+        .message.user .message-bubble {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-bottom-right-radius: 5px;
+        }
+
+        .message.ai .message-bubble {
+            background: #f3f4f6;
+            color: #1f2937;
+            border-bottom-left-radius: 5px;
+        }
+
+        .typing-indicator {
+            display: none;
+            padding: 15px 20px;
+            background: #f3f4f6;
+            border-radius: 20px;
+            border-bottom-left-radius: 5px;
+            max-width: 70px;
+        }
+
+        .typing-indicator.active {
+            display: block;
+        }
+
+        .typing-dots {
+            display: flex;
+            gap: 5px;
+        }
+
+        .typing-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #9ca3af;
+            animation: typing 1.4s infinite;
+        }
+
+        .typing-dot:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .typing-dot:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+
+        @keyframes typing {
+            0%, 60%, 100% { transform: translateY(0); }
+            30% { transform: translateY(-10px); }
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 40px 20px;
+            color: #6b7280;
+        }
+
+        .empty-state h3 {
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+        }
+
+        .example-prompts {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 15px;
+        }
+
+        .example-prompt {
+            background: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            border: 2px solid #e5e7eb;
+            transition: all 0.2s;
+        }
+
+        .example-prompt:hover {
+            border-color: #667eea;
+            transform: translateY(-2px);
+        }
+
+        .input-container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            display: flex;
+            gap: 10px;
+        }
+
+        .input-wrapper {
+            flex: 1;
+            display: flex;
+            gap: 10px;
+        }
+
+        #userInput {
+            flex: 1;
+            padding: 15px 20px;
+            border: 2px solid #e5e7eb;
+            border-radius: 15px;
+            font-size: 1rem;
+            font-family: 'SolaimanLipi', sans-serif;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        #userInput:focus {
+            border-color: #667eea;
+        }
+
+        button {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 15px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-family: 'SolaimanLipi', sans-serif;
+        }
+
+        #sendBtn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        #sendBtn:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        #sendBtn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        #clearBtn {
+            background: #ef4444;
+            color: white;
+        }
+
+        #clearBtn:hover {
+            background: #dc2626;
+            transform: translateY(-2px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: white;
+            font-size: 0.95rem;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 2px solid white;
+        }
+
+        footer a:hover {
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .subtitle {
+                font-size: 0.95rem;
+            }
+
+            .message-bubble {
+                max-width: 85%;
+            }
+
+            .input-container {
+                flex-direction: column;
+            }
+
+            button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="https://png.pngtree.com/png-vector/20220705/ourmid/pngtree-sun-icon-logo-png-png-image_5687131.png" alt="Alo Bangla Logo" class="logo">
+            <h1>Alo Bangla AI Chat</h1>
+            <p class="subtitle">Browser-based Bengali Language Model</p>
+        </header>
+
+        <div class="info-box" id="techInfo">
+            <h3>Technical Information</h3>
+            <p><strong>Model Status:</strong> Alo Bangla model files are included in this deployment</p>
+            <p><strong>Model Files:</strong> Available at <a href="/models/alo-bangla/" target="_blank">/models/alo-bangla/</a></p>
+            <p><strong>Format:</strong> SafeTensors (475 MB) + tokenizer configs</p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/likhonsdevbd/alo_bangla/releases/v1.0.0" target="_blank">Release v1.0.0</a></p>
+            <p><strong>Note:</strong> Currently using demo mode with base GPT-2. The Alo Bangla model is included but requires ONNX conversion for browser use.</p>
+        </div>
+
+        <div class="status-bar">
+            <div class="status-indicator">
+                <span class="status-dot" id="statusDot"></span>
+                <span id="statusText">Initializing...</span>
+            </div>
+            <button id="clearBtn" style="padding: 10px 20px; display: none;">Clear Chat</button>
+        </div>
+
+        <div class="progress-container" id="progressContainer">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <div class="progress-text" id="progressText">Loading model...</div>
+        </div>
+
+        <div class="chat-container" id="chatContainer">
+            <div class="empty-state" id="emptyState">
+                <h3>Welcome to Alo Bangla AI</h3>
+                <p>Start a conversation in Bengali. Try these examples:</p>
+                <div class="example-prompts">
+                    <div class="example-prompt" onclick="setPrompt('আলো')">আলো</div>
+                    <div class="example-prompt" onclick="setPrompt('বই')">বই</div>
+                    <div class="example-prompt" onclick="setPrompt('ভালো')">ভালো</div>
+                    <div class="example-prompt" onclick="setPrompt('শিক্ষা')">শিক্ষা</div>
+                </div>
+            </div>
+            <div id="messagesContainer"></div>
+            <div class="typing-indicator" id="typingIndicator">
+                <div class="typing-dots">
+                    <div class="typing-dot"></div>
+                    <div class="typing-dot"></div>
+                    <div class="typing-dot"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="input-container">
+            <div class="input-wrapper">
+                <input 
+                    type="text" 
+                    id="userInput" 
+                    placeholder="Type your message in Bengali..."
+                    disabled
+                >
+                <button id="sendBtn" disabled>Send</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        Maintained by <a href="https://t.me/likhonsheikh" target="_blank">Likhon Sheikh</a> (Founder)
+    </footer>
+
+    <!-- Transformers.js -->
+    <script type="module">
+        import { pipeline, env } from 'https://cdn.jsdelivr.net/npm/@xenova/transformers@2.17.2';
+
+        // Configure environment
+        env.allowLocalModels = false;
+        env.allowRemoteModels = true;
+        env.useBrowserCache = true;
+
+        let generator = null;
+        let isGenerating = false;
+        const conversationHistory = [];
+
+        const statusDot = document.getElementById('statusDot');
+        const statusText = document.getElementById('statusText');
+        const progressContainer = document.getElementById('progressContainer');
+        const progressFill = document.getElementById('progressFill');
+        const progressText = document.getElementById('progressText');
+        const chatContainer = document.getElementById('chatContainer');
+        const messagesContainer = document.getElementById('messagesContainer');
+        const emptyState = document.getElementById('emptyState');
+        const typingIndicator = document.getElementById('typingIndicator');
+        const userInput = document.getElementById('userInput');
+        const sendBtn = document.getElementById('sendBtn');
+        const clearBtn = document.getElementById('clearBtn');
+
+        // Log model file availability
+        console.log('%c Alo Bangla Model Files', 'background: #667eea; color: white; font-weight: bold; padding: 4px 8px;');
+        console.log('Model directory:', window.location.origin + '/models/alo-bangla/');
+        console.log('Available files: config.json, vocab.json, merges.txt, tokenizer_config.json, model.safetensors');
+        console.log('GitHub Release: https://github.com/likhonsdevbd/alo_bangla/releases/v1.0.0');
+        console.log('\n%cNote:%c Transformers.js requires ONNX format. SafeTensors model included but needs conversion.', 'font-weight: bold', '');
+        console.log('To use the full Alo Bangla model:');
+        console.log('1. Convert model.safetensors to ONNX format');
+        console.log('2. Or upload to Hugging Face Hub');
+        console.log('3. Then update the model path below');
+
+        // Verify model files are accessible
+        fetch('/models/alo-bangla/config.json')
+            .then(r => r.json())
+            .then(config => {
+                console.log('%c✓ Model config loaded successfully', 'color: green; font-weight: bold');
+                console.log('Model type:', config.model_type);
+                console.log('Vocab size:', config.vocab_size);
+            })
+            .catch(err => console.error('Model config not accessible:', err));
+
+        // Update status
+        function setStatus(status, message) {
+            statusDot.className = 'status-dot ' + status;
+            statusText.textContent = message;
+        }
+
+        // Initialize model
+        async function initializeModel() {
+            try {
+                setStatus('loading', 'Loading GPT-2 base model (demo mode)...');
+                progressContainer.style.display = 'block';
+
+                // Progress callback
+                const progressCallback = (progress) => {
+                    if (progress.status === 'progress') {
+                        const percent = Math.round((progress.loaded / progress.total) * 100);
+                        progressFill.style.width = percent + '%';
+                        progressText.textContent = `Loading: ${percent}% (${Math.round(progress.loaded / 1024 / 1024)} MB / ${Math.round(progress.total / 1024 / 1024)} MB)`;
+                    } else if (progress.status === 'done') {
+                        progressFill.style.width = '100%';
+                        progressText.textContent = 'Model loaded successfully!';
+                    }
+                };
+
+                /* 
+                 * IMPORTANT: Model Loading Configuration
+                 * 
+                 * The Alo Bangla model files are served at /models/alo-bangla/
+                 * However, Transformers.js requires ONNX format models.
+                 * 
+                 * Current setup uses base GPT-2 for demonstration.
+                 * 
+                 * To use the custom Alo Bangla model:
+                 * 1. Convert model.safetensors to ONNX:
+                 *    pip install optimum[onnxruntime]
+                 *    optimum-cli export onnx --model /path/to/model /path/to/output
+                 * 
+                 * 2. Update model path below to local ONNX model or Hugging Face Hub
+                 * 
+                 * 3. Alternatively, upload to Hugging Face:
+                 *    - Create repository: https://huggingface.co/new
+                 *    - Upload all model files including ONNX version
+                 *    - Change 'Xenova/gpt2' to 'your-username/alo-bangla'
+                 */
+                
+                generator = await pipeline(
+                    'text-generation',
+                    'Xenova/gpt2',  // Change to custom model after ONNX conversion
+                    { progress_callback: progressCallback }
+                );
+
+                setStatus('ready', 'Model ready - Chat with Bengali AI (Demo Mode)');
+                progressContainer.style.display = 'none';
+                userInput.disabled = false;
+                sendBtn.disabled = false;
+                clearBtn.style.display = 'block';
+
+                console.log('%c✓ Pipeline initialized', 'color: green; font-weight: bold');
+
+            } catch (error) {
+                console.error('Model loading error:', error);
+                setStatus('error', 'Error loading model: ' + error.message);
+                progressContainer.style.display = 'none';
+            }
+        }
+
+        // Add message to chat
+        function addMessage(text, isUser = false) {
+            if (emptyState.style.display !== 'none') {
+                emptyState.style.display = 'none';
+            }
+
+            const messageDiv = document.createElement('div');
+            messageDiv.className = 'message ' + (isUser ? 'user' : 'ai');
+
+            const bubbleDiv = document.createElement('div');
+            bubbleDiv.className = 'message-bubble';
+            bubbleDiv.textContent = text;
+
+            messageDiv.appendChild(bubbleDiv);
+            messagesContainer.appendChild(messageDiv);
+
+            chatContainer.scrollTop = chatContainer.scrollHeight;
+
+            if (!isUser) {
+                conversationHistory.push({ role: 'assistant', content: text });
+            }
+        }
+
+        // Typing animation
+        async function typeMessage(text) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = 'message ai';
+
+            const bubbleDiv = document.createElement('div');
+            bubbleDiv.className = 'message-bubble';
+
+            messageDiv.appendChild(bubbleDiv);
+            messagesContainer.appendChild(messageDiv);
+
+            let currentText = '';
+            for (let i = 0; i < text.length; i++) {
+                currentText += text[i];
+                bubbleDiv.textContent = currentText;
+                chatContainer.scrollTop = chatContainer.scrollHeight;
+                await new Promise(resolve => setTimeout(resolve, 30));
+            }
+
+            conversationHistory.push({ role: 'assistant', content: text });
+        }
+
+        // Generate response
+        async function generateResponse(userMessage) {
+            if (!generator || isGenerating) return;
+
+            isGenerating = true;
+            sendBtn.disabled = true;
+            userInput.disabled = true;
+
+            // Add user message
+            addMessage(userMessage, true);
+            conversationHistory.push({ role: 'user', content: userMessage });
+
+            // Show typing indicator
+            typingIndicator.classList.add('active');
+            chatContainer.scrollTop = chatContainer.scrollHeight;
+
+            try {
+                // Generate text
+                const result = await generator(userMessage, {
+                    max_new_tokens: 50,
+                    temperature: 0.8,
+                    top_k: 50,
+                    top_p: 0.95,
+                    do_sample: true,
+                });
+
+                // Hide typing indicator
+                typingIndicator.classList.remove('active');
+
+                // Extract generated text
+                let generatedText = result[0].generated_text;
+                
+                // Remove the input prompt from the output if it's repeated
+                if (generatedText.startsWith(userMessage)) {
+                    generatedText = generatedText.slice(userMessage.length).trim();
+                }
+
+                // If empty or too short, provide fallback
+                if (!generatedText || generatedText.length < 2) {
+                    generatedText = 'আমি বুঝতে পারছি না। আরো একবার চেষ্টা করুন।';
+                }
+
+                // Type out the response
+                await typeMessage(generatedText);
+
+            } catch (error) {
+                console.error('Generation error:', error);
+                typingIndicator.classList.remove('active');
+                addMessage('দুঃখিত, একটি ত্রুটি হয়েছে। আবার চেষ্টা করুন।', false);
+            }
+
+            isGenerating = false;
+            sendBtn.disabled = false;
+            userInput.disabled = false;
+            userInput.focus();
+        }
+
+        // Send message
+        function sendMessage() {
+            const message = userInput.value.trim();
+            if (!message || isGenerating) return;
+
+            userInput.value = '';
+            generateResponse(message);
+        }
+
+        // Clear chat
+        function clearChat() {
+            messagesContainer.innerHTML = '';
+            conversationHistory.length = 0;
+            emptyState.style.display = 'block';
+        }
+
+        // Set example prompt
+        window.setPrompt = function(text) {
+            if (!isGenerating && !sendBtn.disabled) {
+                userInput.value = text;
+                userInput.focus();
+            }
+        };
+
+        // Event listeners
+        sendBtn.addEventListener('click', sendMessage);
+        clearBtn.addEventListener('click', clearChat);
+
+        userInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                sendMessage();
+            }
+        });
+
+        // Initialize on load
+        initializeModel();
+    </script>
+</body>
+</html>
